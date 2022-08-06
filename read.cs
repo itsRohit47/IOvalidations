@@ -28,6 +28,26 @@ namespace read
             return choice;
         }
 
+        public double Double(string prompt)
+        {
+            double choice = 0;
+            bool correct = true;
+            while (correct)
+            {
+                try
+                {
+                    Console.Write(prompt + " ");
+                    choice = Convert.ToDouble(Console.ReadLine());
+                    break;
+                }
+                catch (System.Exception e)
+                {
+                    Console.WriteLine($"{e.Message} (Hint: enter a double)");
+                }
+            }
+            return choice;
+        }
+
         //Boolean function allows user to naturally answer the boolean questions
         public bool Boolean(string prompt)
         {

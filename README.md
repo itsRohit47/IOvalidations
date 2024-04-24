@@ -1,1 +1,1 @@
-Simplifies reading inputs from console in c#, #personalPain
+Simplifies reading and validating inputs from console in c#, #personalPain
